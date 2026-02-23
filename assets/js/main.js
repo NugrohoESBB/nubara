@@ -143,3 +143,17 @@ const markerIcon = L.divIcon({
 L.marker([-6.1667033435294485, 106.87250731702541], { icon: markerIcon }).addTo(map).bindPopup(`<b style="font-family:monospace;font-size:11px">NUBARA STUDIO</b><br><span style="font-family:monospace;font-size:10px;color:#666">Jakarta, Indonesia</span>`).openPopup();
 
 window.onbeforeunload = () => window.scrollTo(0, 0);
+
+// ── WHATSAPP ORDER ────────────────────────────────────────────────
+const WA_NUMBER = "6281379544107";
+
+document.querySelectorAll(".product-wa-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const product = btn.dataset.product;
+        const price   = btn.dataset.price;
+        const message = `Halo Nubara! Saya tertarik untuk order:\n\n*${product}*\nHarga: ${price}\n\nMohon info lebih lanjut ya 🙏`;
+        const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+    });
+});

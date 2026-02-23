@@ -765,6 +765,13 @@ nav.scrolled {
 	color: var(--black);
 	border-color: var(--white);
 }
+/* ── WHATSAPP BUTTON (override a-tag default) ── */
+a.product-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
 /* TEAM */
 /* #team {
