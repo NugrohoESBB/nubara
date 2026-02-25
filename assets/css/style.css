@@ -10,6 +10,278 @@
 	--mono: "DM Mono", monospace;
 	--display: "Syne", sans-serif;
 }
+
+/* ── LIGHT THEME ── */
+[data-theme="light"] {
+	--black: #f5f5f0;
+	--white: #050508;
+	--grey1: #e8e8e3;
+	--grey2: #d5d5d0;
+	--grey3: #aaaaaa;
+	--grey4: #888888;
+	--grey5: #444444;
+	--border: rgba(0, 0, 0, 0.1);
+}
+
+/* Hero ── LIGHT */
+[data-theme="light"] .hero-tag {
+	/* color: rgba(5, 5, 8, 0.5); */
+	color: var(--white);
+}
+[data-theme="light"] .hero-title {
+	text-shadow:
+		0 0 80px rgba(0, 0, 0, 0.08),
+		0 4px 60px rgba(255, 255, 255, 0.5);
+}
+[data-theme="light"] .hero-title span {
+	color: rgba(5, 5, 8, 0.2);
+}
+[data-theme="light"] .hero-sub {
+	/* color: rgba(5, 5, 8, 0.35); */
+	color: var(--white);
+}
+[data-theme="light"] .hero-scroll span {
+	/* color: rgba(5, 5, 8, 0.35); */
+	color: var(--white);
+}
+[data-theme="light"] .scroll-line {
+	background: linear-gradient(to bottom, rgba(5, 5, 8, 0.4), transparent);
+}
+
+/* Cursor ── LIGHT */
+[data-theme="light"] .cursor-ring {
+	border-color: rgba(5, 5, 8, 0.35);
+}
+
+/* Marquee ── LIGHT */
+[data-theme="light"] .marquee-wrap {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+/* Cards ── LIGHT */
+[data-theme="light"] .about-card {
+	background: rgba(220, 220, 215, 0.75);
+}
+[data-theme="light"] .about-card:hover {
+	background: rgba(205, 205, 200, 0.9);
+	border-color: rgba(0, 0, 0, 0.15);
+}
+[data-theme="light"] .file-card {
+	background: rgba(220, 220, 215, 0.75);
+}
+[data-theme="light"] .file-card:hover {
+	border-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+[data-theme="light"] .file-thumb::after {
+	background: linear-gradient(to bottom, transparent 50%, rgba(245, 245, 240, 0.88));
+}
+[data-theme="light"] .file-thumb-label span {
+	background: rgba(245, 245, 240, 0.6);
+	border-color: rgba(0, 0, 0, 0.15);
+	color: var(--white);
+}
+[data-theme="light"] .product-card {
+	background: rgba(220, 220, 215, 0.75);
+}
+[data-theme="light"] .product-card:hover {
+	background: rgba(205, 205, 200, 0.9);
+}
+[data-theme="light"] .testi-swiper .testi-card,
+[data-theme="light"] .testi-card {
+	background: rgba(215, 215, 210, 0.8);
+}
+
+/* Team overlay ── LIGHT */
+[data-theme="light"] .team-overlay {
+	background: linear-gradient(to bottom, transparent 40%, rgba(245, 245, 240, 0.95) 100%);
+}
+[data-theme="light"] .team-name {
+	color: var(--white);
+}
+
+/* Nav ── LIGHT */
+[data-theme="light"] nav.scrolled {
+	background: rgba(245, 245, 240, 0.92) !important;
+	border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+[data-theme="light"] .nav-cta {
+	border-color: rgba(0, 0, 0, 0.2);
+}
+[data-theme="light"] .nav-cta:hover {
+	background: rgba(0, 0, 0, 0.05);
+	border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Footer ── LIGHT */
+[data-theme="light"] footer {
+	/* background: rgba(230, 230, 225, 0.95); */
+	background: rgba(245, 245, 240, 0.92);
+	border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Form inputs ── LIGHT */
+[data-theme="light"] .form-input {
+	background: rgba(0, 0, 0, 0.03);
+	border-color: rgba(0, 0, 0, 0.1);
+	color: var(--white);
+}
+[data-theme="light"] .form-input:focus {
+	border-color: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.05);
+}
+[data-theme="light"] .form-input::placeholder {
+	color: var(--grey4);
+}
+
+/* Progress bar ── LIGHT */
+[data-theme="light"] .progress-bar {
+	background: rgba(5, 5, 8, 0.4);
+}
+
+/* Corner decorations ── LIGHT */
+[data-theme="light"] .corner {
+	border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Modal ── LIGHT */
+[data-theme="light"] .proj-overlay {
+	background: rgba(245, 245, 240, 0.85);
+}
+[data-theme="light"] .proj-modal {
+	background: rgba(235, 235, 230, 0.98);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+[data-theme="light"] .proj-tab {
+	background: rgba(225, 225, 220, 0.9);
+	border-color: rgba(0, 0, 0, 0.06);
+}
+[data-theme="light"] .proj-tab.active-tab {
+	background: rgba(205, 205, 200, 0.9);
+}
+[data-theme="light"] .proj-close {
+	background: rgba(0, 0, 0, 0.05);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+[data-theme="light"] .proj-img::after {
+	background: linear-gradient(to bottom, transparent 40%, rgba(235, 235, 230, 0.98) 100%);
+}
+[data-theme="light"] .proj-detail-item {
+	background: rgba(225, 225, 220, 0.9);
+}
+[data-theme="light"] .proj-stack-pill {
+	border-color: rgba(0, 0, 0, 0.12);
+}
+[data-theme="light"] .proj-stack-pill:hover {
+	border-color: rgba(0, 0, 0, 0.35);
+	background: rgba(0, 0, 0, 0.04);
+}
+[data-theme="light"] .proj-btn-secondary {
+	border-color: rgba(0, 0, 0, 0.12);
+}
+[data-theme="light"] .proj-btn-secondary:hover {
+	border-color: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.04);
+}
+
+/* Partner logos ── LIGHT */
+[data-theme="light"] .partner-logo-item img {
+	filter: brightness(0) invert(0);
+}
+
+/* Shop grid border ── LIGHT */
+[data-theme="light"] .shop-grid {
+	background: rgba(0, 0, 0, 0.08);
+	border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* ── THEME SWITCHER UI ── */
+.theme-toggle-wrap {
+	position: relative;
+}
+#themeToggleBtn {
+	background: none;
+	border: none;
+	color: var(--white);
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.7;
+	transition:
+		opacity 0.2s,
+		transform 0.2s;
+}
+#themeToggleBtn:hover {
+	opacity: 1;
+	transform: rotate(20deg);
+}
+#themeToggleBtn i {
+	font-size: 1.6rem;
+	transition: color 0.3s;
+}
+[data-theme="light"] #themeToggleBtn i {
+	color: #050508;
+}
+[data-theme="light"] #themeDropdown {
+	background: rgba(235, 235, 230, 0.97);
+}
+#themeDropdown {
+	display: none;
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 50%;
+	transform: translateX(-50%) scaleY(0.85);
+	background: rgba(13, 13, 18, 0.97);
+	backdrop-filter: blur(16px);
+	padding: 0.5rem 0.4rem;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 6px;
+	opacity: 0;
+	transition:
+		opacity 0.22s ease,
+		transform 0.22s ease;
+	transform-origin: top center;
+	z-index: 999;
+}
+.theme-btn {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.2s;
+	flex-shrink: 0;
+}
+.theme-btn[data-t="dark"] {
+	background: linear-gradient(135deg, #050508 50%, #f5f5f0 50%);
+}
+.theme-btn[data-t="light"] {
+	background: linear-gradient(135deg, #f5f5f0 50%, #050508 50%);
+}
+.theme-btn:hover {
+	transform: scale(1.2);
+}
+.theme-btn.active {
+	outline: 2px solid var(--white);
+	outline-offset: 2px;
+}
+
+/* Nav scrolled ── LIGHT */
+nav.scrolled {
+	background: color-mix(in srgb, var(--black) 88%, transparent) !important;
+}
+/* Partner logo light mode → jadi hitam */
+[data-theme="light"] .partner-logo-item img {
+	filter: brightness(0) invert(0);
+}
+
+/* ── BLACK THEME (DEFAULT) ── */
 html {
 	scrollbar-width: thin;
 	scrollbar-color: #333 #111;
@@ -173,6 +445,11 @@ nav.scrolled {
 	background: rgba(255, 255, 255, 0.07);
 	border-color: rgba(255, 255, 255, 0.5);
 }
+.nav-right {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
 
 /* HERO */
 #hero {
@@ -190,7 +467,8 @@ nav.scrolled {
 	font-size: 0.7rem;
 	letter-spacing: 0.3em;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.35);
+	/* color: rgba(255, 255, 255, 0.35); */
+	color: var(--white);
 	margin-bottom: 24px;
 }
 .hero-title {
@@ -211,7 +489,7 @@ nav.scrolled {
 	font-family: var(--mono);
 	font-size: 0.75rem;
 	letter-spacing: 0.3em;
-	color: rgba(255, 255, 255, 0.2);
+	color: var(--white);
 	text-transform: uppercase;
 	margin-top: 32px;
 	will-change: transform;
@@ -231,7 +509,7 @@ nav.scrolled {
 	font-family: var(--mono);
 	font-size: 0.58rem;
 	letter-spacing: 0.3em;
-	color: rgba(255, 255, 255, 0.25);
+	color: var(--white);
 	text-transform: uppercase;
 }
 .scroll-line {
@@ -451,7 +729,8 @@ nav.scrolled {
 .service-num {
 	font-family: var(--mono);
 	font-size: 0.65rem;
-	color: var(--grey3);
+	/* color: var(--grey3); */
+	color: var(--white);
 	letter-spacing: 0.1em;
 }
 .service-name {
@@ -472,7 +751,8 @@ nav.scrolled {
 	font-size: 0.58rem;
 	letter-spacing: 0.15em;
 	text-transform: uppercase;
-	color: var(--grey4);
+	/* color: var(--grey4); */
+	color: var(--white);
 	border: 1px solid var(--border);
 	padding: 0.3rem 0.7rem;
 	border-radius: 2px;
@@ -689,24 +969,6 @@ nav.scrolled {
 .product-card:hover {
 	background: rgba(26, 26, 34, 0.85);
 }
-/* ASLI */
-/* .product-thumb {
-				width: 100%;
-				aspect-ratio: 1;
-				background: rgba(26, 26, 34, 0.6);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: 2.5rem;
-				opacity: 0.2;
-				transition: opacity 0.3s;
-				clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
-			}
-			.product-card:hover .product-thumb {
-				opacity: 0.4;
-			} */
-
-/* DEVELOPMENT */
 .product-thumb {
 	width: 100%;
 	aspect-ratio: 1;
@@ -767,111 +1029,12 @@ nav.scrolled {
 }
 /* ── WHATSAPP BUTTON (override a-tag default) ── */
 a.product-btn {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    box-sizing: border-box;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
-/* TEAM */
-/* #team {
-				padding: 10rem 0 8rem;
-				background: transparent;
-				z-index: 3;
-			}
-			.team-header {
-				margin-bottom: 5rem;
-			}
-			.team-title {
-				font-size: clamp(2rem, 3.5vw, 3.2rem);
-				font-weight: 800;
-				letter-spacing: -0.02em;
-				margin-top: 1.5rem;
-			}
-			.team-title em {
-				font-style: normal;
-				color: var(--grey4);
-			}
-			.team-grid {
-				display: grid;
-				grid-template-columns: repeat(4, 1fr);
-				gap: 1.5rem;
-			}
-			.team-card {
-				position: relative;
-				background: rgba(13, 13, 18, 0.7);
-				backdrop-filter: blur(8px);
-				border: 1px solid var(--border);
-				padding: 2rem 1.5rem 1.5rem;
-				transition:
-					transform 0.3s,
-					border-color 0.3s;
-				clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
-			}
-			.team-card::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				right: 0;
-				width: 20px;
-				height: 20px;
-				background: var(--grey3);
-				clip-path: polygon(0 0, 100% 100%, 100% 0);
-				transition: background 0.3s;
-			}
-			.team-card:hover {
-				transform: translateY(-6px);
-				border-color: rgba(255, 255, 255, 0.15);
-			}
-			.team-card:hover::before {
-				background: rgba(255, 255, 255, 0.15);
-			}
-			.team-avatar {
-				width: 100%;
-				aspect-ratio: 3/2;
-				background: var(--grey2);
-				border-radius: 2px;
-				overflow: hidden;
-				margin-bottom: 1.2rem;
-				position: relative;
-			}
-			.team-avatar img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				object-position: top;
-				display: block;
-				filter: grayscale(80%) brightness(0.7);
-				transition:
-					filter 0.4s,
-					transform 0.5s;
-			}
-			.team-card:hover .team-avatar img {
-				filter: grayscale(40%) brightness(0.85);
-				transform: scale(1.04);
-			}
-			.team-name {
-				font-size: 1rem;
-				font-weight: 700;
-				letter-spacing: -0.01em;
-				margin-bottom: 0.3rem;
-			}
-			.team-role {
-				font-family: var(--mono);
-				font-size: 0.62rem;
-				letter-spacing: 0.15em;
-				text-transform: uppercase;
-				color: var(--grey4);
-				margin-bottom: 1rem;
-			}
-			.team-bio {
-				font-family: var(--mono);
-				font-size: 0.68rem;
-				color: var(--grey4);
-				line-height: 1.8;
-			} */
-
-/* DEVELOPMENT */
 /* TEAM */
 #team {
 	padding: 10rem 0 8rem;
@@ -1010,7 +1173,6 @@ a.product-btn {
 	font-style: normal;
 	color: var(--grey4);
 }
-/* .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;} */
 .testi-card {
 	background: rgba(26, 26, 34, 0.7);
 	backdrop-filter: blur(8px);
@@ -1093,8 +1255,6 @@ a.product-btn {
 	letter-spacing: -0.01em;
 	margin-top: 1rem;
 }
-/* .partners-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);border:1px solid var(--border);} */
-/* .partner-item{background:rgba(5,5,8,0.5);backdrop-filter:blur(4px);padding:2rem;display:flex;align-items:center;justify-content:center;transition:background .2s;} */
 .partner-item:hover {
 	background: rgba(13, 13, 18, 0.7);
 }
@@ -1110,16 +1270,6 @@ a.product-btn {
 	color: var(--grey5);
 }
 
-/* ASLI (gambar google atau sendiri) */
-/* .partners-track {
-				display: flex;
-				animation: marquee 25s linear infinite;
-				white-space: nowrap;
-				align-items: center;
-				width: max-content;
-			} */
-
-/* DEVELOPMENT (gambar google/sendiri) */
 .partners-track {
 	display: flex;
 	animation: partners-scroll 30s linear infinite;
@@ -1137,7 +1287,7 @@ a.product-btn {
 	}
 }
 
-/* CSS JIKA FOTONYA DARI KITA */
+/* JIKA FOTONYA DARI KITA */
 .partner-logo-item {
 	display: inline-flex;
 	align-items: center;
@@ -1157,24 +1307,6 @@ a.product-btn {
 .partner-logo-item:hover {
 	opacity: 1;
 }
-
-/* ASLI (FOTO GOOGLE) */
-/* .partner-logo-item {
-				display: inline-flex;
-				align-items: center;
-				padding: 0 4rem;
-				color: var(--grey4);
-				opacity: 0.5;
-				transition:
-					opacity 0.3s,
-					color 0.3s;
-				cursor: default;
-				flex-shrink: 0;
-			}
-			.partner-logo-item:hover {
-				opacity: 1;
-				color: var(--white);
-			} */
 
 /* TESTIMONIALS — Swiper overrides */
 .testi-swiper {
@@ -1331,8 +1463,6 @@ textarea.form-input {
 	opacity: 0.85;
 	transform: translateY(-1px);
 }
-/* #map{width:100%;height:360px;filter:grayscale(100%) invert(90%) contrast(80%);opacity:.35;} */
-/* #map{width:100%;height:360px;filter:grayscale(30%) contrast(90%);opacity:.9;border-top:1px solid var(--border);} */
 #map {
 	width: 100%;
 	height: 360px;
@@ -1432,70 +1562,6 @@ footer {
 	right: 1rem;
 	border-width: 0 1px 1px 0;
 }
-
-/* @media (max-width: 900px) {
-				.container {
-					padding: 0 24px;
-				}
-				nav {
-					padding: 1.2rem 1.5rem;
-				}
-				nav.scrolled {
-					padding: 0.8rem 1.5rem;
-				}
-				.nav-links {
-					display: none;
-				}
-				.about-grid {
-					grid-template-columns: 1fr;
-					gap: 3rem;
-				}
-				.about-right {
-					grid-template-columns: 1fr 1fr;
-					transform: none;
-				}
-				.about-card {
-					transform: none;
-				}
-				.team-grid {
-					grid-template-columns: repeat(2, 1fr);
-				}
-				.testi-grid {
-					grid-template-columns: 1fr;
-				}
-				.shop-grid {
-					grid-template-columns: repeat(2, 1fr);
-				}
-				.partners-grid {
-					grid-template-columns: repeat(3, 1fr);
-				}
-				.contact-grid {
-					grid-template-columns: 1fr;
-					gap: 3rem;
-				}
-				.portfolio-stack {
-					grid-template-columns: 1fr;
-				}
-				.services-header {
-					flex-direction: column;
-					align-items: flex-start;
-					gap: 1rem;
-				}
-				.services-desc {
-					text-align: left;
-				}
-				.service-row {
-					grid-template-columns: 40px 1fr 60px;
-				}
-				.service-tags {
-					display: none;
-				}
-				.footer-inner {
-					flex-direction: column;
-					gap: 1rem;
-					text-align: center;
-				}
-			} */
 /* ── DESKTOP LARGE (1280px+) ── already handled by base CSS ── */
 
 /* ── DESKTOP MEDIUM (1024px – 1279px) ── */
@@ -1889,8 +1955,16 @@ footer {
 	.nav-logo {
 		font-size: 1rem;
 	}
+	.nav-right {
+		gap: 0.4rem;
+	}
+	#themeToggleBtn {
+		width: 26px;
+		height: 26px;
+		font-size: 0.85rem;
+	}
 	.nav-cta {
-		display: none; /* sembunyikan di layar sangat kecil */
+		display: none;
 	}
 
 	/* HERO */

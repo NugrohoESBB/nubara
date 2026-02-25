@@ -1,4 +1,4 @@
-VANTA.NET({
+window._vanta = VANTA.NET({
 	el: "#vanta-bg",
 	mouseControls: true,
 	touchControls: true,
@@ -110,22 +110,6 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
-// L.marker([-6.1667033435294485, 106.87250731702541], { icon: customIcon })
-//     .addTo(map)
-//     .bindPopup("<b>Pudina Studio Office</b><br>Sumur Batu, Central Jakarta 10640, Indonesia")
-//     .openPopup();
-
-//L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-//  attribution: '© OpenStreetMap contributors © CARTO'
-//}).addTo(map);
-
-//const markerIcon = L.divIcon({
-//  className: '',
-//  html: `<div style="width:12px;height:12px;background:#fff;border-radius:50%;box-shadow:0 0 0 4px rgba(255,255,255,.2),0 0 20px rgba(255,255,255,.4)"></div>`,
-//  iconSize: [12, 12],
-//  iconAnchor: [6, 6]
-//});
-
 const markerIcon = L.divIcon({
 	className: "",
 	html: `<div style="
@@ -144,16 +128,95 @@ L.marker([-6.1667033435294485, 106.87250731702541], { icon: markerIcon }).addTo(
 
 window.onbeforeunload = () => window.scrollTo(0, 0);
 
+// ── THEME SWITCHER ──────────────────────────────────
+const themeToggleBtn = document.getElementById("themeToggleBtn");
+const themeDropdown = document.getElementById("themeDropdown");
+
+const themeVanta = {
+	dark: { color: 0xffffff, backgroundColor: 0x050508, maxDistance: 20, points: 12, spacing: 18 },
+	light: { color: 0x222222, backgroundColor: 0xf5f5f0, maxDistance: 20, points: 12, spacing: 18 },
+};
+
+function applyTheme(name) {
+	document.documentElement.setAttribute("data-theme", name);
+	document.querySelectorAll(".theme-btn").forEach((b) => b.classList.toggle("active", b.dataset.t === name));
+	const v = themeVanta[name];
+	if (v && window._vanta) {
+		// Destroy & recreate
+		window._vanta.destroy();
+		window._vanta = VANTA.NET({
+			el: "#vanta-bg",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200,
+			minWidth: 200,
+			color: v.color,
+			backgroundColor: v.backgroundColor,
+			points: v.points,
+			maxDistance: v.maxDistance,
+			spacing: v.spacing,
+		});
+	}
+	localStorage.setItem("nubara-theme", name);
+
+	// ganti icon sesuai theme
+	const icon = themeToggleBtn.querySelector("i");
+	if (icon) icon.className = name === "dark" ? "bx bx-moon" : "bx bx-sun";
+}
+
+document.querySelectorAll(".theme-btn").forEach((btn) => btn.addEventListener("click", () => applyTheme(btn.dataset.t)));
+
+applyTheme(localStorage.getItem("nubara-theme") || "dark");
+
+themeToggleBtn.addEventListener("click", (e) => {
+	e.stopPropagation();
+	const isOpen = themeDropdown.dataset.open === "true";
+	if (!isOpen) {
+		themeDropdown.style.display = "flex";
+		requestAnimationFrame(() => {
+			themeDropdown.style.opacity = "1";
+			themeDropdown.style.transform = "translateX(-50%) scaleY(1)";
+		});
+		themeDropdown.dataset.open = "true";
+	} else {
+		closeDropdown();
+	}
+});
+
+function closeDropdown() {
+	themeDropdown.style.opacity = "0";
+	themeDropdown.style.transform = "translateX(-50%) scaleY(0.85)";
+	setTimeout(() => {
+		themeDropdown.style.display = "none";
+	}, 220);
+	themeDropdown.dataset.open = "false";
+}
+
+document.addEventListener("click", closeDropdown);
+themeDropdown.addEventListener("click", (e) => e.stopPropagation());
+
 // ── WHATSAPP ORDER ────────────────────────────────────────────────
 const WA_NUMBER = "6281379544107";
 
 document.querySelectorAll(".product-wa-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const product = btn.dataset.product;
-        const price   = btn.dataset.price;
-        const message = `Halo Nubara! Saya tertarik untuk order:\n\n*${product}*\nHarga: ${price}\n\nMohon info lebih lanjut ya 🙏`;
-        const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
-    });
+	btn.addEventListener("click", (e) => {
+		e.preventDefault();
+		const product = btn.dataset.product;
+		const price = btn.dataset.price;
+		const message = `Hi Nubara! I'm interested in ordering:\nProduct: *${product}*\nPrice: ${price} (excl. 9% VAT)\n\nPlease provide more information...`;
+		window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
+	});
+});
+
+// ── CONTACT MESSAGE ────────────────────────────────────────────────
+document.getElementById("contactSubmit").addEventListener("click", () => {
+	const name = document.querySelector('input[placeholder="John Doe"]').value.trim();
+	const email = document.querySelector('input[placeholder="john@company.com"]').value.trim();
+	const projectType = document.querySelector('input[placeholder="e.g. Web Development, UI/UX..."]').value.trim();
+	const message = document.querySelector("textarea").value.trim();
+
+	const text = `Hi Nubara! I have a project inquiry:\n\nName: ${name}\nEmail: ${email}\nProject Type: ${projectType}\nMessage:\n${message}`;
+	window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
+	document.querySelector(".contact-form").reset();
 });
