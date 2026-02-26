@@ -204,7 +204,7 @@ document.querySelectorAll(".product-wa-btn").forEach((btn) => {
 		e.preventDefault();
 		const product = btn.dataset.product;
 		const price = btn.dataset.price;
-		const message = `Hi Nubara! I'm interested in ordering:\nProduct: *${product}*\nPrice: ${price}\n\nPlease provide more information...`;
+		const message = `Hi Nubara! I'm interested in ordering:\nProduct:*${product}*\nPrice: ${price}\n\nPlease provide more information...`;
 		window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`, "_blank");
 	});
 });
