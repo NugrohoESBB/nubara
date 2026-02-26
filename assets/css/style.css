@@ -1422,7 +1422,7 @@ a.product-btn {
 	letter-spacing: 0.25em;
 	text-transform: uppercase;
 	/* color: var(--grey4); */
-	color: var(--grey5);
+	color: var(--white);
 	display: block;
 	margin-bottom: 0.5rem;
 }
