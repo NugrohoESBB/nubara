@@ -55,7 +55,7 @@ const projectData = [
 		title: "Pulsar CMS",
 		category: "Web Dev",
 		year: "2023",
-		img: "assets/img/portfolio/Portfolio5.jpg",
+		img: "assets/img/portfolio/Portfolio5.png",
 		desc: "Content management system custom untuk media digital dengan traffic tinggi. Mendukung 50+ editor secara bersamaan dengan sistem versioning dan workflow approval.",
 		client: "Pulsar Media",
 		duration: "5 Months",
