@@ -1,0 +1,790 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nubara — Digital Studio</title>
+		<link href="assets/img/logo_link.png" rel="icon" />
+		<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+	</head>
+	<body>
+		<div class="cursor" id="cursor"></div>
+		<div class="cursor-ring" id="cursorRing"></div>
+		<div id="vanta-bg"></div>
+		<div class="progress-bar" id="progress"></div>
+		<div class="corner c-tl"></div>
+		<div class="corner c-tr"></div>
+		<div class="corner c-bl"></div>
+		<div class="corner c-br"></div>
+
+		<nav id="navbar">
+			<a href="#hero" class="nav-logo">NUB<span>ARA</span></a>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Works</a></li>
+				<li><a href="#shop">Shop</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+
+			<div class="nav-right">
+				<!-- LANGUAGES -->
+				<div class="lang-toggle-wrap">
+					<button id="langToggleBtn">
+						<span class="lang-flag">🇺🇸</span>
+						<span class="lang-label">EN</span>
+					</button>
+				</div>
+
+				<!-- THEME SWITCHER -->
+				<div class="theme-toggle-wrap">
+					<button id="themeToggleBtn"><i class="bx bx-sun"></i></button>
+					<div id="themeDropdown">
+						<button class="theme-btn" data-t="dark" title="Dark"></button>
+						<button class="theme-btn" data-t="light" title="Light"></button>
+					</div>
+				</div>
+				<a href="#contact" class="nav-cta">Get in Touch →</a>
+			</div>
+		</nav>
+
+		<div class="site-wrap">
+			<section id="hero">
+				<div class="hero-tag">Full-Service Digital Studio</div>
+				<h1 class="hero-title" id="heroTitle">CODE<br />MEETS<br /><span>CRAFT</span></h1>
+				<!-- <p class="hero-sub" id="heroSub">We build, design &amp; ship — from idea to launch.</p> -->
+				<p class="hero-sub" id="heroSub">We design and build digital systems — from software platforms to smart technology solutions.</p>
+				<div class="hero-scroll" id="scrollHint">
+					<div class="scroll-line"></div>
+					<span>Scroll</span>
+				</div>
+			</section>
+
+			<div class="marquee-wrap">
+				<div class="marquee-track"><span>Web Development</span><span class="dot">·</span><span>UI/UX Design</span><span class="dot">·</span> <span>E-Commerce</span><span class="dot">·</span><span>Branding</span><span class="dot">·</span> <span>Mobile Apps</span><span class="dot">·</span><span>Digital Strategy</span><span class="dot">·</span> <span>Software Dev</span><span class="dot">·</span><span>Web Development</span><span class="dot">·</span> <span>UI/UX Design</span><span class="dot">·</span><span>E-Commerce</span><span class="dot">·</span> <span>Branding</span><span class="dot">·</span><span>Mobile Apps</span><span class="dot">·</span> <span>Digital Strategy</span><span class="dot">·</span><span>Software Dev</span><span class="dot">·</span></div>
+			</div>
+
+			<section id="about">
+				<div class="container">
+					<div class="about-grid">
+						<div class="about-left" data-aos="fade-right" data-aos-duration="900">
+							<div class="eyebrow">About Us</div>
+							<h2 class="about-title">We craft digital<br /><em>experiences</em><br />that matter.</h2>
+							<p class="about-body">Nubara is a full-service digital studio that combines technical expertise with design acumen. We build digital products that not only function—but also impress.</p>
+							<div class="about-stats">
+								<div class="stat-item">
+									<div class="num">50+</div>
+									<div class="lbl">Projects</div>
+								</div>
+								<div class="stat-item">
+									<div class="num">30+</div>
+									<div class="lbl">Clients</div>
+								</div>
+								<div class="stat-item">
+									<div class="num">5yr</div>
+									<div class="lbl">Experience</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-right" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+							<div class="about-card">
+								<div class="about-card-icon">⬡</div>
+								<h4>Pixel Perfect</h4>
+								<p>Every detail is designed with high precision, from typography to spacing.</p>
+							</div>
+							<div class="about-card">
+								<div class="about-card-icon">◈</div>
+								<h4>Tech Driven</h4>
+								<p>Modern technology, optimal performance, and scalable for the future.</p>
+							</div>
+							<div class="about-card">
+								<div class="about-card-icon">◇</div>
+								<h4>Result Focused</h4>
+								<p>Every design and technical decision is based on real business impact.</p>
+							</div>
+							<div class="about-card">
+								<div class="about-card-icon">✦</div>
+								<h4>Full Service</h4>
+								<p>From concept to launch — we handle every aspect of your digital product.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section id="services">
+				<div class="container">
+					<div class="services-header" data-aos="fade-up" data-aos-duration="800">
+						<h2 class="services-title">What We<br /><em>Do Best</em></h2>
+						<p class="services-desc">Our services are designed to meet all your business digital needs —</p>
+					</div>
+					<div class="services-list">
+						<div class="service-row" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+							<span class="service-num">01</span><span class="service-name">Web Development</span>
+							<div class="service-tags"><span class="tag-pill">React</span><span class="tag-pill">Next.js</span><span class="tag-pill">Laravel</span></div>
+							<span class="service-arrow">→</span>
+						</div>
+						<div class="service-row" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600">
+							<span class="service-num">02</span><span class="service-name">UI/UX Design</span>
+							<div class="service-tags"><span class="tag-pill">Figma</span><span class="tag-pill">Prototyping</span></div>
+							<span class="service-arrow">→</span>
+						</div>
+						<div class="service-row" data-aos="fade-up" data-aos-delay="120" data-aos-duration="600">
+							<span class="service-num">03</span><span class="service-name">E-Commerce</span>
+							<div class="service-tags"><span class="tag-pill">Shopify</span><span class="tag-pill">WooCommerce</span></div>
+							<span class="service-arrow">→</span>
+						</div>
+						<div class="service-row" data-aos="fade-up" data-aos-delay="180" data-aos-duration="600">
+							<span class="service-num">04</span><span class="service-name">Mobile Development</span>
+							<div class="service-tags"><span class="tag-pill">Flutter</span><span class="tag-pill">React Native</span></div>
+							<span class="service-arrow">→</span>
+						</div>
+						<div class="service-row" data-aos="fade-up" data-aos-delay="240" data-aos-duration="600">
+							<span class="service-num">05</span><span class="service-name">Branding &amp; Identity</span>
+							<div class="service-tags"><span class="tag-pill">Logo</span><span class="tag-pill">Guidelines</span></div>
+							<span class="service-arrow">→</span>
+						</div>
+						<div class="service-row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+							<span class="service-num">06</span><span class="service-name">Digital Strategy</span>
+							<div class="service-tags"><span class="tag-pill">SEO</span><span class="tag-pill">Analytics</span></div>
+							<span class="service-arrow">→</span>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<section id="services">
+				<div class="container">
+					<div class="services-header" data-aos="fade-up" data-aos-duration="800">
+						<h2 class="services-title">What We<br /><em>Do Best</em></h2>
+						<p class="services-desc">We build industrial systems, web platforms, mobile apps, and IoT solutions using modern and reliable technologies.</p>
+					</div>
+
+					<div class="services-list">
+						<div class="service-row" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+							<span class="service-num">01</span>
+							<span class="service-name">Desktop Application Development</span>
+							<div class="service-tags">
+								<span class="tag-pill">.NET</span>
+								<span class="tag-pill">C#</span>
+								<span class="tag-pill">MySQL</span>
+							</div>
+							<span class="service-arrow">→</span>
+						</div>
+
+						<div class="service-row" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600">
+							<span class="service-num">02</span>
+							<span class="service-name">Web Application Development</span>
+							<div class="service-tags">
+								<span class="tag-pill">Laravel</span>
+								<span class="tag-pill">PHP</span>
+								<span class="tag-pill">Bootstrap</span>
+								<span class="tag-pill">MySQL</span>
+							</div>
+							<span class="service-arrow">→</span>
+						</div>
+
+						<div class="service-row" data-aos="fade-up" data-aos-delay="120" data-aos-duration="600">
+							<span class="service-num">03</span>
+							<span class="service-name">Frontend & Landing Page Development</span>
+							<div class="service-tags">
+								<span class="tag-pill">HTML</span>
+								<span class="tag-pill">CSS</span>
+								<span class="tag-pill">JavaScript</span>
+								<span class="tag-pill">Leaflet.js</span>
+							</div>
+							<span class="service-arrow">→</span>
+						</div>
+
+						<div class="service-row" data-aos="fade-up" data-aos-delay="180" data-aos-duration="600">
+							<span class="service-num">04</span>
+							<span class="service-name">Mobile Application Development</span>
+							<div class="service-tags">
+								<span class="tag-pill">Kotlin</span>
+								<span class="tag-pill">Android</span>
+								<span class="tag-pill">Spreadsheet</span>
+							</div>
+							<span class="service-arrow">→</span>
+						</div>
+
+						<div class="service-row" data-aos="fade-up" data-aos-delay="240" data-aos-duration="600">
+							<span class="service-num">05</span>
+							<span class="service-name">IoT & Smart System Development</span>
+							<div class="service-tags">
+								<span class="tag-pill">Arduino</span>
+								<span class="tag-pill">ESP8266 / ESP32</span>
+								<span class="tag-pill">Raspberry Pi</span>
+								<span class="tag-pill">Sensors</span>
+							</div>
+							<span class="service-arrow">→</span>
+						</div>
+
+						<div class="service-row" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+							<span class="service-num">06</span>
+							<span class="service-name">System Integration & Data Monitoring</span>
+							<div class="service-tags">
+								<span class="tag-pill">Web Dashboard</span>
+								<span class="tag-pill">Desktop System</span>
+								<span class="tag-pill">Real-time Monitoring</span>
+							</div>
+							<span class="service-arrow">→</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="portfolio">
+				<div class="container">
+					<div class="portfolio-header" data-aos="fade-up" data-aos-duration="800">
+						<h2 class="portfolio-title">Selected<br /><em>Works</em></h2>
+						<a href="#portfolio" class="portfolio-link">View all projects</a>
+					</div>
+					<div class="portfolio-stack">
+						<div class="file-card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio1.png" alt="Unique Code" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Desktop App · 2026</div>
+								<div class="file-title">AkaNova · Unique Code</div>
+								<div class="file-desc">AkaNova Unique Code is a desktop application built to generate and manage unique codes, automatically transmitting them to TransX CodeJet printers to support high-speed product coding in manufacturing environments.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio7.png" alt="Send Data" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Desktop App · 2025</div>
+								<div class="file-title">AkaNova · Send Data</div>
+								<div class="file-desc">AkaNova Send Data is a desktop application that delivers structured print data to Citronix CI5500 industrial printers, enabling automated product coding and stable communication with production equipment.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio2.png" alt="Landing Page" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Web App · 2025</div>
+								<div class="file-title">AkaNova · Landing Page</div>
+								<div class="file-desc">AkaNova Dashboard landing page built to present product information, highlight key features, and deliver a modern responsive experience across all devices.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio3.jpg" alt="Restaurant Management" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Web App · 2025</div>
+								<div class="file-title">AkaNova · Restaurant Management</div>
+								<div class="file-desc">AkaNova Dashboard is a web-based restaurant management interface that visualizes operational data such as orders, revenue, guest statistics, and menu performance through interactive analytics and real-time monitoring.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio4.jpg" alt="Company Profile" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Web App · 2025</div>
+								<div class="file-title">AkaNova · Company Profile</div>
+								<div class="file-desc">AkaNova Company Profile is a corporate profile website designed to communicate company expertise, services, and strategic capabilities through a modern UI, structured content layout, and engaging visual presentation.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio5.png" alt="SmartKasir" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Desktop App · 2025</div>
+								<div class="file-title">AkaNova · SmartKasir</div>
+								<div class="file-desc">AkaNova SmartKasir is a desktop Point of Sale system built to streamline retail transactions, manage product inventory, process multiple payment methods, and generate sales reports efficiently.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio6.png" alt="StokKu" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Mobile App · 2025</div>
+								<div class="file-title">AkaNova · StokKu</div>
+								<div class="file-desc">AkaNova StokKu is a mobile inventory management application built to help businesses monitor stock levels, manage product movements, and maintain accurate inventory records in real time.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio8.JPG" alt="CoreStage" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Web App · 2025</div>
+								<div class="file-title">AkaNova · CoreStage</div>
+								<div class="file-desc">AkaNova CoreStage is a web-based academic management platform built to handle student information, course data, and grading records through a structured administrative dashboard.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio9.jpg" alt="IoT" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">IoT (Internet of Things) · 2025</div>
+								<div class="file-title">AkaNova · Smart System</div>
+								<div class="file-desc">Modular IoT platform developed for academic and research purposes, integrating sensors, controllers, and monitoring dashboards to support smart agriculture, hydroponics, smart parking, and other automated systems.</div>
+							</div>
+						</div>
+						<div class="file-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+							<div class="file-tab"></div>
+							<div class="file-thumb">
+								<img src="assets/img/portfolio/Portfolio10.jpg" alt="SmartSystem App" loading="lazy" />
+								<div class="file-thumb-label"><span>View Project →</span></div>
+							</div>
+							<div class="file-body">
+								<div class="file-meta">Smart System App · 2025</div>
+								<div class="file-title">AkaNova · Smart System App</div>
+								<div class="file-desc">Smart system web platform that integrates IoT devices, providing real-time monitoring, data visualization, and remote control capabilities for automated environments.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="shop">
+				<div class="container">
+					<div class="shop-header" data-aos="fade-up" data-aos-duration="800">
+						<h2 class="shop-title">Digital & Smart<br /><em>Products</em></h2>
+						<a href="#shop" class="portfolio-link">Browse all →</a>
+					</div>
+					<div class="shop-grid" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+						<div class="product-card">
+							<div class="product-thumb">
+								<img src="assets/img/products/Product1.png" alt="Writing & Presentation Service" />
+							</div>
+							<div class="product-cat">Documentation</div>
+							<div class="product-name">Writing & Presentation Service</div>
+							<div class="product-price">
+								Start from IDR 150.000 <span><br />✦ Reports, essays &amp; proposals<br />✦ Slide decks &amp; pitch decks<br />✦ Professional formatting &amp; structured layout<br />⏱ Est. based on project scope</span>
+							</div>
+							<a href="#" class="product-btn product-wa-btn" data-product="Writing & Presentation Service" data-price="Start from IDR 150.000" target="_blank">Order Via Whatsapp →</a>
+						</div>
+						<div class="product-card">
+							<div class="product-thumb">
+								<img src="assets/img/products/Product2.jpg" alt="Web Development" />
+							</div>
+							<div class="product-cat">Digital Services</div>
+							<div class="product-name">Web<br />Development</div>
+							<div class="product-price">
+								Start from IDR 1.500.000 <span><br />✦ Landing page &amp; company profile<br />✦ CMS &amp; admin dashboard<br />✦ E-commerce &amp; custom web app<br />⏱ Est. based on project scope</span>
+							</div>
+							<a href="#" class="product-btn product-wa-btn" data-product="Web Development" data-price="Start from IDR 1.500.000" target="_blank">Order Via Whatsapp →</a>
+						</div>
+						<div class="product-card">
+							<div class="product-thumb">
+								<img src="assets/img/products/Product3.png" alt="Mobile & Desktop Application" />
+							</div>
+							<div class="product-cat">Software Solutions</div>
+							<div class="product-name">Mobile & Desktop Application</div>
+							<div class="product-price">
+								Start from IDR 3.000.000 <span><br />✦ Android App (custom — Kotlin)<br />✦ Desktop app (custom)<br />✦ Pricing based on features &amp; complexity<br />⏱ Est. based on project scope</span>
+							</div>
+							<a href="#" class="product-btn product-wa-btn" data-product="Mobile & Desktop Application" data-price="Start from IDR 3.000.000" target="_blank">Order Via Whatsapp →</a>
+						</div>
+						<div class="product-card">
+							<div class="product-thumb">
+								<img src="assets/img/products/Product4.png" alt="Design & Visual Concept" />
+							</div>
+							<div class="product-cat">Creative Solutions</div>
+							<div class="product-name">Design & Visual<br />Concept</div>
+							<div class="product-price">
+								Start from IDR 500.000 <span><br />✦ Poster, banner &amp; social media assets<br />✦ Interior &amp; spatial concept<br />✦ Branding assets &amp; style guides<br />⏱ Est. based on project scope</span>
+							</div>
+							<a href="#" class="product-btn product-wa-btn" data-product="Design & Visual Concept" data-price="Start from IDR 500.000" target="_blank">Order Via Whatsapp →</a>
+						</div>
+						<div class="product-card">
+							<div class="product-thumb">
+								<img src="assets/img/products/Product5.jpg" alt="Smart System Development" />
+							</div>
+							<div class="product-cat">Smart Technology</div>
+							<div class="product-name">Smart System Development</div>
+							<div class="product-price">
+								IDR (Negotiable) <span><br />✦ Arduino &amp; ESP8266/ESP32 systems<br />✦ Raspberry Pi &amp; automation<br />✦ IoT integration &amp; sensor-based systems<br />⏱ Est. based on project scope</span>
+							</div>
+							<a href="#" class="product-btn product-wa-btn" data-product="Smart System Development" data-price="IDR (Negotiable)" target="_blank">Order Via Whatsapp →</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="team">
+				<div class="container">
+					<div class="team-header" data-aos="fade-up" data-aos-duration="800">
+						<div class="eyebrow">The People</div>
+						<h2 class="team-title">Meet the<br /><em>Team</em></h2>
+					</div>
+					<div class="team-grid">
+						<!-- PER-ITEM, AOSNYA SELISIH 100 -->
+						<div class="team-card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="700">
+							<div class="team-photo">
+								<img src="assets/img/teams/team-3.jpg" alt="Nugroho Eko S Batubara" loading="lazy" />
+								<div class="team-overlay">
+									<div class="team-name">Nugroho Eko Saputra Batubara</div>
+									<div class="team-role">Founder & CEO · Software Developer</div>
+									<div class="team-social">
+										<a href="https://nugroho-portfolio.netlify.app/" target="_blank"><i class="bx bx-cloud"></i></a>
+										<a href="https://instagram.com/nugrohonesb_" target="_blank"><i class="bx bxl-instagram"></i></a>
+										<a href="https://linkedin.com/in/nugroho-eko-saputra-batubara-755945240/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="testimonials" style="padding: 8rem 0; background: transparent; clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%); z-index: 3; margin: -2px 0">
+				<div class="container">
+					<div class="testi-header" data-aos="fade-up" data-aos-duration="800">
+						<div class="eyebrow">Client Say</div>
+						<h2 class="testi-title">What They<br /><em>Say</em></h2>
+					</div>
+
+					<div class="swiper testi-swiper" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">The AkaNova system helped us automate our production coding process. Data transfer to our industrial printers runs smoothly and significantly reduces manual errors on the production line.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">A</div>
+											<div>
+												<div class="testi-name">Indofood CBP</div>
+												<div class="testi-company">Production Team, Indofood CBP</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">AkaNova Send Data provides stable communication with our Citronix CI5500 printers. The system makes it easier to send structured print data and maintain consistency in our production process.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">S</div>
+											<div>
+												<div class="testi-name">Sutisna</div>
+												<div class="testi-company">Manufacturing Department, Corinthian Doors</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">The CoreStage academic platform simplifies the management of student data, courses, and grading. The dashboard is intuitive and helps administrators manage information efficiently.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">B</div>
+											<div>
+												<div class="testi-name">High Schools in Bengkulu</div>
+												<div class="testi-company">Academic Staff, High Schools in Bengkulu</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">The AkaNova Smart System platform integrates sensors and monitoring dashboards seamlessly. It is very useful for developing IoT projects such as smart agriculture and hydroponic systems.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">A</div>
+											<div>
+												<div class="testi-name">Gunadarma University Students</div>
+												<div class="testi-company">IoT Research Team, Gunadarma University Students</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">SmartKasir streamlines our sales process and inventory tracking. Transactions are faster and the reporting system helps us monitor business performance more easily.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">S</div>
+											<div>
+												<div class="testi-name">Business Owner</div>
+												<div class="testi-company">Retail Store Client, Business Owner</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- PENGULANGAN -->
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">The AkaNova system helped us automate our production coding process. Data transfer to our industrial printers runs smoothly and significantly reduces manual errors on the production line.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">A</div>
+											<div>
+												<div class="testi-name">Indofood CBP</div>
+												<div class="testi-company">Production Team, Indofood CBP</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">AkaNova Send Data provides stable communication with our Citronix CI5500 printers. The system makes it easier to send structured print data and maintain consistency in our production process.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">S</div>
+											<div>
+												<div class="testi-name">Sutisna</div>
+												<div class="testi-company">Manufacturing Department, Corinthian Doors</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">The CoreStage academic platform simplifies the management of student data, courses, and grading. The dashboard is intuitive and helps administrators manage information efficiently.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">B</div>
+											<div>
+												<div class="testi-name">High Schools in Bengkulu</div>
+												<div class="testi-company">Academic Staff, High Schools in Bengkulu</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">The AkaNova Smart System platform integrates sensors and monitoring dashboards seamlessly. It is very useful for developing IoT projects such as smart agriculture and hydroponic systems.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">A</div>
+											<div>
+												<div class="testi-name">Gunadarma University Students</div>
+												<div class="testi-company">IoT Research Team, Gunadarma University Students</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="testi-card">
+									<div class="testi-inner">
+										<div class="testi-quote">"</div>
+										<p class="testi-text">SmartKasir streamlines our sales process and inventory tracking. Transactions are faster and the reporting system helps us monitor business performance more easily.</p>
+										<div class="testi-author">
+											<div class="testi-avatar">S</div>
+											<div>
+												<div class="testi-name">Business Owner</div>
+												<div class="testi-company">Retail Store Client, Business Owner</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Pagination dots -->
+						<!-- <div class="swiper-pagination" style="margin-top:2rem;position:relative;"></div> -->
+					</div>
+				</div>
+			</section>
+
+			<section id="partners" style="padding: 7rem 0; background: transparent; z-index: 3">
+				<div class="container">
+					<div class="partners-header" data-aos="fade-up" data-aos-duration="800">
+						<div class="eyebrow" style="justify-content: center">Trusted By</div>
+						<h3 class="partners-title">Our Partners &amp; Clients</h3>
+					</div>
+				</div>
+
+				<!-- Auto-scroll marquee logo -->
+				<div style="overflow: hidden; position: relative; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-top: 2rem">
+					<div class="partners-track">
+						<span class="partner-logo-item"><img src="assets/img/partners/Pudina.png" alt="Pudina Studio" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Corinthian.png" alt="Corinthian" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Indofood_CBP.png" alt="Indofood cbp" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Pudina.png" alt="Pudina Studio" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Corinthian.png" alt="Corinthian" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Indofood_CBP.png" alt="Indofood cbp" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Pudina.png" alt="Pudina Studio" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Corinthian.png" alt="Corinthian" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Indofood_CBP.png" alt="Indofood cbp" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Pudina.png" alt="Pudina Studio" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Corinthian.png" alt="Corinthian" /></span>
+						<span class="partner-logo-item"><img src="assets/img/partners/Indofood_CBP.png" alt="Indofood cbp" /></span>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<div class="container">
+					<div class="contact-grid">
+						<div class="contact-left" data-aos="fade-right" data-aos-duration="900">
+							<div class="eyebrow">Contact</div>
+							<h2 class="contact-title">Let's Build<br />Something<br /><em>Together</em></h2>
+							<p class="contact-body">
+								Have a project you'd like to see realized? We're always open to new collaborations. Tell us your vision, and let's make it happen together.
+								<br /><br />
+								Prefer a quick chat? Reach us directly on WhatsApp — we typically respond within a few hours.
+							</p>
+							<div class="contact-links">
+								<!-- mailto:nugrohonesb@gmail.com -->
+								<a href="#contact" class="contact-link">nugrohonesb@gmail.com</a>
+								<a href="#contact" class="contact-link">+62 813 7954 4107</a>
+								<a href="#contact" class="contact-link">Jakarta, Indonesia</a>
+							</div>
+						</div>
+						<div class="contact-right" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+							<form class="contact-form" onsubmit="return false;">
+								<div class="form-group"><label class="form-label">Your Name</label><input type="text" class="form-input" placeholder="John Doe" /></div>
+								<div class="form-group"><label class="form-label">Email Address</label><input type="email" class="form-input" placeholder="john@company.com" /></div>
+								<div class="form-group"><label class="form-label">Project Type</label><input type="text" class="form-input" placeholder="e.g. Web Development, UI/UX..." /></div>
+								<div class="form-group"><label class="form-label">Message</label><textarea class="form-input" placeholder="Tell us about your project..."></textarea></div>
+								<button class="form-submit" id="contactSubmit">Send Message →</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="map" style="background: #fff; position: relative; z-index: 10"></div>
+			</section>
+
+			<footer>
+				<div class="container">
+					<div class="footer-inner">
+						<div class="footer-logo">NUB<span>ARA</span></div>
+						<div class="footer-copy">NUBARA &copy; Nugroho Eko S Batubara 2021 - <span id="year"></span>. All Rights Reserved.</div>
+						<div class="footer-links">
+							<a href="#">Privacy</a>
+							<a href="#">Terms</a>
+							<a href="https://instagram.com/nugrohonesb_" target="_blank"><i class="bx bxl-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div class="proj-overlay" id="projOverlay">
+			<div class="proj-modal" id="projModal">
+				<!-- Tab bar -->
+				<div class="proj-tab-bar">
+					<div class="proj-tab active-tab" id="projTabCat">E-Commerce</div>
+					<div class="proj-tab" id="projTabYear">2024</div>
+				</div>
+
+				<!-- Close -->
+				<button class="proj-close" id="projClose" aria-label="Close">✕</button>
+
+				<!-- Image -->
+				<div class="proj-img">
+					<img src="" alt="" id="projImg" />
+				</div>
+
+				<!-- Body -->
+				<div class="proj-body">
+					<!-- Meta -->
+					<div class="proj-meta-row">
+						<span class="proj-category" id="projCat">E-Commerce</span>
+						<span class="proj-year" id="projYearText">2024</span>
+					</div>
+
+					<!-- Title -->
+					<h2 class="proj-title" id="projTitle">Arventa Store</h2>
+
+					<div class="proj-divider"></div>
+
+					<!-- Description -->
+					<p class="proj-desc" id="projDesc">Platform e-commerce fashion dengan sistem rekomendasi produk berbasis AI.</p>
+
+					<!-- Details grid -->
+					<div class="proj-details">
+						<div class="proj-detail-item">
+							<div class="proj-detail-label">Client</div>
+							<div class="proj-detail-value" id="projClient">Arventa Group</div>
+						</div>
+						<div class="proj-detail-item">
+							<div class="proj-detail-label">Duration</div>
+							<div class="proj-detail-value" id="projDuration">3 Months</div>
+						</div>
+						<div class="proj-detail-item">
+							<div class="proj-detail-label">Role</div>
+							<div class="proj-detail-value" id="projRole">Full Stack</div>
+						</div>
+					</div>
+
+					<!-- Tech Stack -->
+					<div class="proj-stack-label">Tech Stack</div>
+					<div class="proj-stack" id="projStack">
+						<!-- Pills diisi via JS -->
+					</div>
+
+					<!-- Actions -->
+					<div class="proj-actions">
+						<a href="#" target="_blank" class="proj-btn proj-btn-primary" id="projLiveBtn"> View Live <span>→</span> </a>
+						<a href="#" target="_blank" class="proj-btn proj-btn-secondary" id="projGithubBtn"> <i class="bx bxl-github"></i> Source Code </a>
+					</div>
+				</div>
+				<!-- /proj-body -->
+			</div>
+			<!-- /proj-modal -->
+		</div>
+		<!-- /proj-overlay -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/modal.js"></script>
+	</body>
+</html>
