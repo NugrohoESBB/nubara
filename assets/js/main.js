@@ -22,6 +22,8 @@ AOS.init({
 	easing: "ease-out-quart",
 });
 
+// CURSOR
+/*
 const cursor = document.getElementById("cursor");
 const cursorRing = document.getElementById("cursorRing");
 let mx = 0,
@@ -55,6 +57,8 @@ document.querySelectorAll("a, button, .service-row, .file-card, .product-card, .
 		cursorRing.classList.remove("hover");
 	});
 });
+*/
+// CURSOR
 
 const navbar = document.getElementById("navbar");
 const progressBar = document.getElementById("progress");

@@ -340,10 +340,10 @@ body {
 	color: var(--white);
 	font-family: var(--display);
 	overflow-x: hidden;
-	cursor: none;
+	/* cursor: none; */
 }
 
-.cursor {
+/* .cursor {
 	position: fixed;
 	width: 8px;
 	height: 8px;
@@ -368,7 +368,7 @@ body {
 	transition:
 		width 0.3s,
 		height 0.3s;
-}
+} */
 .cursor.hover {
 	width: 4px;
 	height: 4px;
