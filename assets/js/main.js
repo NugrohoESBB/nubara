@@ -124,7 +124,7 @@ const markerIcon = L.divIcon({
 	iconAnchor: [15, 30],
 });
 
-L.marker([-6.1667033435294485, 106.87250731702541], { icon: markerIcon }).addTo(map).bindPopup(`<b style="font-family:monospace;font-size:11px">NUBARA STUDIO</b><br><span style="font-family:monospace;font-size:10px;color:#666">Jakarta, Indonesia</span>`).openPopup();
+L.marker([-6.1667033435294485, 106.87250731702541], { icon: markerIcon }).addTo(map).bindPopup(`<b style="font-family:monospace;font-size:11px">NUBARA LABS</b><br><span style="font-family:monospace;font-size:10px;color:#666">Jakarta, Indonesia</span>`).openPopup();
 
 window.onbeforeunload = () => window.scrollTo(0, 0);
 
@@ -138,7 +138,7 @@ const translations = {
         "nav-shop":     "Shop",
         "nav-team":     "Team",
         "nav-contact":  "Contact",
-        "nav-cta":      "Get in Touch →",
+        "nav-cta":      "View Solutions →",
 
         // HERO
         "hero-tag":     "Full-Service Digital Studio",
@@ -212,9 +212,9 @@ const translations = {
         "contact-title":    "Let's Build<br>Something<br><em>Together</em>",
         "contact-body":     "Have a project you'd like to see realized? We're always open to new collaborations. Tell us your vision, and let's make it happen together.<br><br>Prefer a quick chat? Reach us directly on WhatsApp — we typically respond within a few hours.",
         "form-name-label":      "Your Name",
-        "form-name-ph":         "John Doe",
+        "form-name-ph":         "Your Name",
         "form-email-label":     "Email Address",
-        "form-email-ph":        "john@company.com",
+        "form-email-ph":        "Your Email",
         "form-project-label":   "Project Type",
         "form-project-ph":      "e.g. Web Development, UI/UX...",
         "form-msg-label":       "Message",
@@ -230,7 +230,7 @@ const translations = {
         "nav-shop":     "Toko",
         "nav-team":     "Tim",
         "nav-contact":  "Kontak",
-        "nav-cta":      "Hubungi Kami →",
+        "nav-cta":      "Lihat Solusi →",
 
         // HERO
         "hero-tag":     "Studio Digital Terlengkap",
@@ -302,9 +302,9 @@ const translations = {
         "contact-title":    "Mari Bangun<br>Sesuatu<br><em>Bersama</em>",
         "contact-body":     "Punya proyek yang ingin diwujudkan? Kami selalu terbuka untuk kolaborasi baru. Ceritakan visi Anda, dan mari kita wujudkan bersama.<br><br>Lebih suka ngobrol langsung? Hubungi kami via WhatsApp — kami biasanya membalas dalam beberapa jam.",
         "form-name-label":      "Nama Anda",
-        "form-name-ph":         "Budi Santoso",
+        "form-name-ph":         "Nama Anda",
         "form-email-label":     "Alamat Email",
-        "form-email-ph":        "budi@perusahaan.com",
+        "form-email-ph":        "Email Anda",
         "form-project-label":   "Jenis Proyek",
         "form-project-ph":      "mis. Web Development, UI/UX...",
         "form-msg-label":       "Pesan",
@@ -506,6 +506,7 @@ function applyTheme(name) {
 
 document.querySelectorAll(".theme-btn").forEach((btn) => btn.addEventListener("click", () => applyTheme(btn.dataset.t)));
 
+// DEFAULT THEME IF localStorage = null / ""
 applyTheme(localStorage.getItem("nubara-theme") || "dark");
 
 themeToggleBtn.addEventListener("click", (e) => {
@@ -550,8 +551,8 @@ document.querySelectorAll(".product-wa-btn").forEach((btn) => {
 
 // ── CONTACT MESSAGE ────────────────────────────────────────────────
 document.getElementById("contactSubmit").addEventListener("click", () => {
-	const name = document.querySelector('input[placeholder="John Doe"]').value.trim();
-	const email = document.querySelector('input[placeholder="john@company.com"]').value.trim();
+	const name = document.querySelector('input[placeholder="Your Name"]').value.trim();
+	const email = document.querySelector('input[placeholder="Your Email"]').value.trim();
 	const projectType = document.querySelector('input[placeholder="e.g. Web Development, UI/UX..."]').value.trim();
 	const message = document.querySelector("textarea").value.trim();
 
