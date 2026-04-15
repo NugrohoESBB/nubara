@@ -108,7 +108,7 @@ new Swiper(".testi-swiper", {
 	},
 });
 
-const map = L.map("map", { zoomControl: false, scrollWheelZoom: false }).setView([-6.1667033435294485, 106.87250731702541], 14);
+const map = L.map("map", { zoomControl: false, scrollWheelZoom: false }).setView([-6.350437, 106.842412], 14);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution: "© OpenStreetMap contributors",
@@ -128,7 +128,7 @@ const markerIcon = L.divIcon({
 	iconAnchor: [15, 30],
 });
 
-L.marker([-6.1667033435294485, 106.87250731702541], { icon: markerIcon }).addTo(map).bindPopup(`<b style="font-family:monospace;font-size:11px">NUBARA LABS</b><br><span style="font-family:monospace;font-size:10px;color:#666">Jakarta, Indonesia</span>`).openPopup();
+L.marker([-6.350437, 106.842412], { icon: markerIcon }).addTo(map).bindPopup(`<b style="font-family:monospace;font-size:11px">NUBARA LABS</b><br><span style="font-family:monospace;font-size:10px;color:#666">Depok, Indonesia</span>`).openPopup();
 
 window.onbeforeunload = () => window.scrollTo(0, 0);
 
