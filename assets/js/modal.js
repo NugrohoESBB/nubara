@@ -1,6 +1,19 @@
 const projectData = [
 	{
-		title: "Nubara · Unique Code",
+		title: "Nubara · Kopi & Rasa POS",
+		category: "Web App",
+		year: "2026",
+		img: "assets/img/portfolio/Portfolio14.jpg",
+		desc: "Nubara Kopi & Rasa POS POS system is a web application that enables users to place food and beverage orders seamlessly, while providing admins with the ability to track, manage, and process orders in real-time.",
+		client: "Business Owner",
+		duration: "1 Weeks",
+		role: "Full Stack",
+		stack: ["Laravel", "Bootstrap", "MySQL"],
+		live: "https://www.instagram.com/p/DXWftyVFLz4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+		github: "#",
+	},
+	{
+		title: "Nubara · Solar Calculator",
 		category: "Desktop App",
 		year: "2026",
 		img: "assets/img/portfolio/Portfolio12.png",
