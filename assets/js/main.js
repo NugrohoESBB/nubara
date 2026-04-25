@@ -511,7 +511,7 @@ function applyTheme(name) {
 document.querySelectorAll(".theme-btn").forEach((btn) => btn.addEventListener("click", () => applyTheme(btn.dataset.t)));
 
 // DEFAULT THEME IF localStorage = null / ""
-applyTheme(localStorage.getItem("nubara-theme") || "dark");
+applyTheme(localStorage.getItem("nubara-theme") || "light");
 
 themeToggleBtn.addEventListener("click", (e) => {
 	e.stopPropagation();
