@@ -371,7 +371,7 @@ body {
 	margin-top: auto;
 }
 .card-price {
-	font-family: "Cormorant Garamond", serif;
+	/* font-family: "Cormorant Garamond", serif; */
 	font-size: 15px;
 	font-weight: 600;
 	color: var(--ink);
