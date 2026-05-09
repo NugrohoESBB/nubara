@@ -147,7 +147,7 @@ const PRODUCTS = [
 		desc_en: "Assistance with thesis writing, final projects, research proposals, and academic reports.",
 		features_id: ["Skripsi", "Tugas Akhir", "Proposal", "Laporan"],
 		features_en: ["Thesis", "Final Project", "Proposal", "Report"],
-		price: "IDR 300.000+",
+		price: "IDR 500.000+",
 		priceNote_id: "Dinegosiasi · sesuai lingkup",
 		priceNote_en: "Negotiable · based on scope",
 		img: "assets/img/products/Product7.png",
